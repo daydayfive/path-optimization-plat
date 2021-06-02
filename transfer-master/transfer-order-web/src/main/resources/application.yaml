@@ -1,0 +1,49 @@
+
+spring:
+  application:
+    name: order-web
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/transfer?serverTimezone=CST&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=true
+    username: root
+    password: 123456
+
+
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+
+  servlet:
+    multipart:
+      #单个文件的最大值
+      max-file-size: 1GB
+      #上传文件总的最大值
+      max-request-size: 1GB
+
+
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true  #:开启驼峰功能
+
+
+
+# 自定义参数消息
+
+mq:
+  task:
+    match:
+      topic: taskMatchTopic
+      tag: task_match
+    consumer:
+      groupname: task_match_group
+
+  rocketmq:
+    name-server: 47.94.194.165:9876
+    producer:
+      group: taskOrderMatchgroup
+      send-message:
+        timeout: 50000

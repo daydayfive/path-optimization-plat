@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: transfer-order-service
+
+
+dubbo:
+  registry:
+    address: zookeeper://47.94.194.165:2181;zookeeper://47.94.194.165:2182;zookeeper://47.94.194.165:2183
+
+  config-center:
+    timeout: 6000
+#
+
+
+# 自定义参数消息
+
+mq:
+  task:
+    match:
+      topic: taskMatchTopic
+      tag: task_match
+  rocketmq:
+    name-server: 47.94.194.165:9876
+
+    consumer:
+      group: task_match_group
+      consumeThreadMin: 5
+      consumeThreadMax: 10
+
+
+featuremake:
+  version: 1.0.0
+  url: dubbo://47.94.194.165:20880
+
+featuresearch:
+  version: 1.0.0
+  url: dubbo://47.94.194.165:20881

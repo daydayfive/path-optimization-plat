@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: transfer-featuremake-service
+
+
+dubbo:
+  protocol:
+    name: dubbo
+    port: 20880
+
+  registry:
+    address: zookeeper://47.94.194.165:2181;zookeeper://47.94.194.165:2182;zookeeper://47.94.194.165:2183
+
+
+  application:
+    name: transfer-featuremake-service
+    id: transfer-featuremake-service
+
+  scan:
+    base-packages: com.cqu.api.impl

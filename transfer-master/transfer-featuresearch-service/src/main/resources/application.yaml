@@ -1,0 +1,21 @@
+
+spring:
+  application:
+    name: transfer-feature-search-service
+
+
+dubbo:
+  protocol:
+    name: dubbo
+    port: 20881  #服务暴露接口
+
+  registry:  #注册中心配置，用于配置连接注册中心相关信息。
+    address: zookeeper://47.94.194.165:2181;zookeeper://47.94.194.165:2182;zookeeper://47.94.194.165:2183
+
+
+  application:
+    name: transfer-featuresearch-service
+    id: transfer-featuresearch-service
+
+  scan:
+    base-packages: com.cqu.service.impl

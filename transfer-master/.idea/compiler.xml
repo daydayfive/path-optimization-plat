@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_ADDITIONAL_VM_OPTIONS" value="-Djps.track.ap.dependencies=false" />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="transfer-api" />
+        <module name="transfer-order-web" />
+        <module name="transfer-order-service" />
+        <module name="transfer-featuremake-sevice" />
+        <module name="transfer-featuresearch-service" />
+        <module name="transfer-datasource" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="transfer-api" target="1.8" />
+      <module name="transfer-datasource" target="1.8" />
+      <module name="transfer-featuremake-sevice" target="1.8" />
+      <module name="transfer-featuresearch-service" target="1.8" />
+      <module name="transfer-order-service" target="1.8" />
+      <module name="transfer-order-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="transfer-api" options="-parameters" />
+      <module name="transfer-datasource" options="-parameters" />
+      <module name="transfer-featuremake-sevice" options="-parameters" />
+      <module name="transfer-featuresearch-service" options="-parameters" />
+      <module name="transfer-order-service" options="-parameters" />
+      <module name="transfer-order-web" options="-parameters" />
+    </option>
+  </component>
+</project>

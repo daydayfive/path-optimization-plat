@@ -8,12 +8,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="transfer-solve-service" />
         <module name="transfer-api" />
         <module name="transfer-order-web" />
         <module name="transfer-order-service" />
-        <module name="transfer-featuremake-sevice" />
         <module name="transfer-featuresearch-service" />
-        <module name="transfer-datasource" />
+        <module name="transfer-featuremake-sevice" />
+        <module name="transfer-solve-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +24,8 @@
       <module name="transfer-featuresearch-service" target="1.8" />
       <module name="transfer-order-service" target="1.8" />
       <module name="transfer-order-web" target="1.8" />
+      <module name="transfer-solve-service" target="1.8" />
+      <module name="transfer-solve-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -33,6 +36,8 @@
       <module name="transfer-featuresearch-service" options="-parameters" />
       <module name="transfer-order-service" options="-parameters" />
       <module name="transfer-order-web" options="-parameters" />
+      <module name="transfer-solve-service" options="-parameters" />
+      <module name="transfer-solve-web" options="-parameters" />
     </option>
   </component>
 </project>

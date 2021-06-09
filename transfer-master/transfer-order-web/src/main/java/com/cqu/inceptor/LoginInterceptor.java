@@ -1,6 +1,8 @@
 package com.cqu.inceptor;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.SpringBootConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.servlet.HandlerInterceptor;
 
 import javax.servlet.http.HttpServletRequest;
@@ -35,6 +37,8 @@ public class LoginInterceptor implements HandlerInterceptor {
         HttpSession httpSession= request.getSession();
         Object loginUser= httpSession.getAttribute("loginUser");
         if(loginUser!=null){
+
+
             return true;
         }
 

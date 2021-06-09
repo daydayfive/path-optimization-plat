@@ -9,7 +9,8 @@
         <option value="$PROJECT_DIR$/transfer-order-web/pom.xml" />
         <option value="$PROJECT_DIR$/transfer-featuremake-sevice/pom.xml" />
         <option value="$PROJECT_DIR$/transfer-featuresearch-service/pom.xml" />
-        <option value="$PROJECT_DIR$/transfer-datasource/pom.xml" />
+        <option value="$PROJECT_DIR$/transfer-solve-web/pom.xml" />
+        <option value="$PROJECT_DIR$/transfer-solve-service/pom.xml" />
       </list>
     </option>
   </component>

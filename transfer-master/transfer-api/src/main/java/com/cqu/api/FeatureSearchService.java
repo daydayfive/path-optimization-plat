@@ -9,12 +9,15 @@ public interface FeatureSearchService {
     /**  特征搜索接口
      *
      **/
+    //返回与该向量最接近的k个向量的id列表
+    List<Long> getTopKIds(Feature feature,int topK);
 
-    List<List<Long>> getTopKIds(List<Feature> features,int topK);
-
-
-    List<List<Long>> getTopOneId(List<Feature> features);
+    //
+    Long getTopOneId(Feature feature);
 
 
     List<Long> insertFeatures(List<Feature> features);
+
+
+    Long insertOneFeature(Feature feature);
 }

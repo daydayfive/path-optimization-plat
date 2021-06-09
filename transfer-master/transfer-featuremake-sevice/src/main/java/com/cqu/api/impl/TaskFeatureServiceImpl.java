@@ -1,6 +1,7 @@
 package com.cqu.api.impl;
 
-import com.cqu.api.TaskFeatureService;
+import com.cqu.api.TaskFeatureMakeService;
+
 import com.cqu.pojo.Feature;
 import com.cqu.pojo.TaskFeature;
 import com.cqu.pojo.TaskInfo;
@@ -8,7 +9,7 @@ import org.apache.dubbo.config.annotation.DubboService;
 
 
 @DubboService(version = "1.0.0")
-public class TaskFeatureServiceImpl implements TaskFeatureService {
+class TaskFeatureMakeServiceImpl implements TaskFeatureMakeService {
     @Override
     public Feature generateFeatrue(TaskInfo taskInfo) {
 

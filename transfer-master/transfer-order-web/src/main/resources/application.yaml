@@ -38,8 +38,14 @@ mq:
     match:
       topic: taskMatchTopic
       tag: task_match
+
+    result:
+      topic: taskMatchResult
+
     consumer:
       groupname: task_match_group
+
+
 
   rocketmq:
     name-server: 47.94.194.165:9876
@@ -47,3 +53,11 @@ mq:
       group: taskOrderMatchgroup
       send-message:
         timeout: 50000
+
+    match-result-consumer:
+      group: matchResultConsumergroup
+      consumeThreadMin: 5
+      consumeThreadMax: 10
+
+
+

@@ -11,6 +11,7 @@ import java.util.ArrayList;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TaskInfo implements Serializable {
+    private Long userId;
 
     private Task task;
     private ArrayList coordinateX;

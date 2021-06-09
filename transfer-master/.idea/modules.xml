@@ -3,11 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/transfer-api/transfer-api.iml" filepath="$PROJECT_DIR$/transfer-api/transfer-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/transfer-datasource/transfer-datasource.iml" filepath="$PROJECT_DIR$/transfer-datasource/transfer-datasource.iml" />
       <module fileurl="file://$PROJECT_DIR$/transfer-featuremake-sevice/transfer-featuremake-sevice.iml" filepath="$PROJECT_DIR$/transfer-featuremake-sevice/transfer-featuremake-sevice.iml" />
       <module fileurl="file://$PROJECT_DIR$/transfer-featuresearch-service/transfer-featuresearch-service.iml" filepath="$PROJECT_DIR$/transfer-featuresearch-service/transfer-featuresearch-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/transfer-order-service/transfer-order-service.iml" filepath="$PROJECT_DIR$/transfer-order-service/transfer-order-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/transfer-order-web/transfer-order-web.iml" filepath="$PROJECT_DIR$/transfer-order-web/transfer-order-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transfer-solve-service/transfer-solve-service.iml" filepath="$PROJECT_DIR$/transfer-solve-service/transfer-solve-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transfer-solve-web/transfer-solve-web.iml" filepath="$PROJECT_DIR$/transfer-solve-web/transfer-solve-web.iml" />
     </modules>
   </component>
 </project>

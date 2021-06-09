@@ -8,6 +8,7 @@ import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
 import org.apache.rocketmq.client.consumer.listener.MessageListenerConcurrently;
 import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.common.message.MessageExt;
+import org.apache.rocketmq.common.protocol.heartbeat.MessageModel;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.context.annotation.Bean;
@@ -43,6 +44,7 @@ public class TaskConsumerMQListener {
         consumer.setConsumeThreadMax(consumeThreadMax);
         consumer.setConsumeThreadMin(consumeThreadMin);
         consumer.registerMessageListener(new TaskConsumerMessageListener());
+        consumer.setMessageModel(MessageModel.BROADCASTING);
         consumer.subscribe(topic,tag);
         consumer.start();
         System.out.println("TaskConsumerMQListener消费者启动");

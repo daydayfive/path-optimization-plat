@@ -20,6 +20,8 @@ public class Solution {
 
     private Long taskId;
 
+    private Long milvusId;
+
     private String solutionAddr;
 
     private int isSolved;

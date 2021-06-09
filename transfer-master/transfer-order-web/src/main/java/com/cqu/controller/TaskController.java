@@ -7,8 +7,9 @@ import com.alibaba.fastjson.JSON;
 import com.cqu.pojo.Result;
 import com.cqu.pojo.Task;
 import com.cqu.pojo.TaskInfo;
-import com.cqu.milvusmapper.TaskService;
+import com.cqu.mapperservice.TaskService;
 
+import com.cqu.pojo.User;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.rocketmq.client.exception.MQBrokerException;
 import org.apache.rocketmq.client.exception.MQClientException;
@@ -102,18 +103,23 @@ public class TaskController {
 
 
     @GetMapping ("/match")
-    @ResponseBody
-    public Result match() throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
+    public String match(HttpSession httpSession) throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
+
 
         TaskInfo task=new TaskInfo();
+        User loginUser= (User) httpSession.getAttribute("loginUser");
+        task.setUserId(loginUser.getUserId());
         sendProducerOrder(topic,tag, JSON.toJSONString(task));
-        return new Result();
+        System.out.println(Thread.currentThread());
+
+        return "service";
     }
 
 
     private void sendProducerOrder(String topic,String tag,String body) throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
         Message message= new Message(topic,tag,body.getBytes(StandardCharsets.UTF_8));
         SendResult send = producer.send(message);
+        System.out.println("消息发送成功");
 
     }
 

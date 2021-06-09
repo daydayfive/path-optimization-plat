@@ -21,9 +21,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
-  </component>
   <component name="ProjectId" id="1t1RiTydPeOsD4S5lTMygVuyhXr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -54,15 +51,21 @@
       <recent name="D:\IDEA\transfer-master\transfer-order-web\src\main\java\com\cqu\controller" />
       <recent name="D:\IDEA\transfer-master\transfer-order-web\src\test\java\com\cqu" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cqu.config" />
+      <recent name="com.cqu.mq" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.TransferFeaturesearchServiceApplication (1)">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.TransferOrderWebApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,9 +134,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TransferOrderApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="transfer-order-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cqu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cqu" />
+      <option name="MAIN_CLASS_NAME" value="com.cqu.TransferOrderApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlgorithmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="transfer-solve-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cqu.algorithm.AlgorithmApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DatasourceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="transfer-datasource" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cqu.datasource.DatasourceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolveApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="transfer-solve-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cqu.solve.SolveApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolveServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="transfer-solve-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cqu.solveservice.SolveServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -189,6 +229,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TransferOrderApplicationTests.contextLoads" />
         <item itemvalue="JUnit.TransferFeaturesearchServiceApplicationTests.contextLoads3" />
         <item itemvalue="JUnit.TransferFeaturesearchServiceApplicationTests.contextLoads2" />
         <item itemvalue="JUnit.TransferFeaturesearchServiceApplicationTests.contextLoads" />
@@ -209,7 +250,8 @@
       <workItem from="1622040676928" duration="28424000" />
       <workItem from="1622182306337" duration="31812000" />
       <workItem from="1622633931859" duration="470000" />
-      <workItem from="1622634515140" duration="807000" />
+      <workItem from="1622634515140" duration="34106000" />
+      <workItem from="1623221893860" duration="356000" />
     </task>
     <servers />
   </component>
@@ -226,6 +268,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
